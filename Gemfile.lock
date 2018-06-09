@@ -120,5 +120,8 @@ DEPENDENCIES
   redcarpet
   tzinfo-data
 
+RUBY VERSION
+   ruby 2.2.6p396
+
 BUNDLED WITH
    1.13.6
