@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+  - 2.2.6
 services:
   - postgresql
 env:
@@ -8,6 +10,6 @@ before_script:
 addons:
   postgresql: "10.3"
   code_climate:
-    repo_token:
+    repo_token: 4992267e5af3aa9371e62f78ed42b1ba3e1db54f5fe057b48570e676465c7764
 after_success:
   - bundle exec codeclimate-test-reporter
