@@ -26,7 +26,7 @@ class DocumentsController < ApplicationController
     def show
         doc = Document.find(params[:id])
         htmlResponse = markdown(doc.body)
-        render text: htmlResponse, status: :ok, content_type: 'text/html'
+        render html: htmlResponse, status: :ok
     end
 
     def update
